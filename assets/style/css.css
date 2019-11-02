@@ -10,7 +10,7 @@ h1 {
     text-align: center;
     line-height: 108px;
     height: 108px;
-    background-image: linear-gradient(#efc47D, #c4bb8b);
+    background-image: linear-gradient(#ef983b, #c4bb8b);
     color: #dcf763;
     font-family: 'Staatliches', sans-serif;
     /* // set animation */
@@ -24,7 +24,7 @@ h1 {
     font-size: 40px;
     line-height: 48px;
     height: 48px;
-    background: #efc47D;
+    background: #ef983b;
     text-align: left;
     padding-left: 20px;
     padding-top: -2%;
@@ -34,7 +34,7 @@ h1 {
 /* i.sticky {
     font-size: 40px;
     height: 48px;
-    background: #efc47D;
+    background: #ef983b;
     text-align: left;
     padding-left: 20px;
     padding-top: 0%;
