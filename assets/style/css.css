@@ -100,3 +100,23 @@ a:hover {
     text-shadow: -1px 1px 2px #435058;
     letter-spacing: 2px;
 }
+
+#hide {
+    padding: 100px 40px 40px 40px;
+    background-color: #c4bb8b;
+    color: #435058;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-weight: 1000;
+}
+
+#play {
+    font-size: 100px; 
+    color: #dcf763;
+    text-shadow:   -1px 1px 0 #435058;
+    background-color: #c4bb8b;
+}
+
+#front {
+    font-size: 150px; 
+}

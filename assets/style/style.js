@@ -1,3 +1,11 @@
+$(document).ready(function() {
+    $("#show").hide();
+    $("#play").on("click", function() {
+        $("#hide").hide();
+        $("#show").show();
+    });
+});
+
 
 $(document).on("scroll", (function() {
     if ($(document).scrollTop() > 60){  
@@ -9,3 +17,11 @@ $(document).on("scroll", (function() {
         $("#what").css("font-size", "70px");
     }
 }));
+
+
+
+// function hide() {
+//     var x = document.getElementById("hide");
+//     var y = document.getElementById("show");
+//     if (x.style.display)
+// }
