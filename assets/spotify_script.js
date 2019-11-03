@@ -46,7 +46,7 @@
 
         // Replace with your app's client ID, redirect URI and desired scopes
         const clientId = '2ea8916fc375497c977cf897e6533579';
-        const redirectUri = 'https://pierrelampre.github.io/spot/';
+        const redirectUri = 'https://pierrelampre.github.io/Project1/';
         const scopes = [
             'playlist-modify-private',
             'playlist-modify-public',
