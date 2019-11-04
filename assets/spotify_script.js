@@ -8,7 +8,6 @@
         let newBand2;
         let newBand3;
         let newBand4;
-        var initArtist = $("#artistInput").val();
         let userId;
         let track;
 
@@ -69,7 +68,7 @@
             console.log(initArtist);
 
             similars = [];
-
+            var initArtist = $("#artistInput").val();
 
             // let initArtist = document.getElementById("artistInput").value;
             initArtist = initArtist.split(' ').join('+');
