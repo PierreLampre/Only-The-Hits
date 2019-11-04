@@ -330,7 +330,7 @@
 
         //on click create playlist 
 
-        $("#playlist-set").on("click", function (event) {
+        $("#play").on("click", function (event) {
             event.preventDefault();
 
             console.log("Faaay");
