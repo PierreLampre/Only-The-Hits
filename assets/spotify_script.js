@@ -8,7 +8,7 @@
         let newBand2;
         let newBand3;
         let newBand4;
-        let initArtist = document.getElementById("artist-input").value;
+        var initArtist = $("#artistInput").val();
         let userId;
         let track;
 
@@ -71,7 +71,7 @@
             similars = [];
 
 
-            initArtist = document.getElementById("artist-input").value;
+            // let initArtist = document.getElementById("artistInput").value;
             initArtist = initArtist.split(' ').join('+');
 
             $.ajax({
@@ -321,7 +321,7 @@
 
         //functionality for similar artist search
 
-        $("#search").on("click", function (event) {
+        $("#submit").on("click", function (event) {
             event.preventDefault();
 
             getSimilarArtists();
