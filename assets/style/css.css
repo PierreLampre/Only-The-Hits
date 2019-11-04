@@ -136,7 +136,8 @@ a:hover {
 }
 
 button.sa-button {
-    background-color: transparent;
+    background: none;
+    border: none;
     font-family: 'Raleway', sans-serif;
     color: #435058;
     margin: 2px;
