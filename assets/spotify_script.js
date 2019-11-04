@@ -1,5 +1,7 @@
  //Global Variables
 
+        alert("You are linked");
+
         let bandID;
         let newBand0;
         let newBand1;
@@ -46,7 +48,7 @@
 
         // Replace with your app's client ID, redirect URI and desired scopes
         const clientId = '2ea8916fc375497c977cf897e6533579';
-        const redirectUri = 'https://pierrelampre.github.io/spot/';
+        const redirectUri = 'https://pierrelampre.github.io/Project1/';
         const scopes = [
             'playlist-modify-private',
             'playlist-modify-public',
@@ -267,7 +269,7 @@
 
         function createPlaylist() {
 
-            playlistName = document.getElementById("playlist-input").value;
+            playlistName = document.getElementById("listName").value;
 
             $.ajax({
                 url: "https://api.spotify.com/v1/me/playlists",
@@ -328,7 +330,7 @@
 
         //on click create playlist 
 
-        $("#playlist-set").on("click", function (event) {
+        $("#play").on("click", function (event) {
             event.preventDefault();
 
             console.log("Faaay");
