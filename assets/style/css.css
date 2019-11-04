@@ -130,3 +130,7 @@ a:hover {
 #sim-art {
     display: flex;
 }
+
+.sa {
+    float: left;
+}
