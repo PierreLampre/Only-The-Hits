@@ -99,6 +99,7 @@ a:hover {
     color: #dcf763;
     text-shadow: -1px 1px 2px #435058;
     letter-spacing: 2px;
+    display: flex;
 }
 
 #hide {
