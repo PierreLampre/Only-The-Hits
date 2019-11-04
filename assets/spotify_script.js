@@ -117,9 +117,9 @@
             for (let i = 0; i < similars.length; i++) {
 
                 if (i === 4) {
-                    $("#sim-art").append("<span class='sa'><img src='" + similars[i].images[0].url + "'width='100' height='100'><div id='button-div'><button class='sa-button' id='" + similars[i].name + "' data-id='" + similars[i].id + "'>" + similars[i].name + "</button'></div></span>");
+                    $("#sim-art").append("<span class='sa'><img src='" + similars[i].images[0].url + "'width='100' height='100'><div id='button-div'><button class='sa-button' id='" + similars[i].name + "' data-id='" + similars[i].id + "'>" + similars[i].name + "</button'><button class='shows' data-id='" + similars[i].name + "'>Shows</button></div></span>");
                 } else {
-                    $("#sim-art").append("<span class='sa'><img src='" + similars[i].images[0].url + "' width='100' height='100'><div id='button-div'><button class='sa-button' id='" + similars[i].name + "' data-id='" + similars[i].id + "'>" + similars[i].name + "</button></div></span>");
+                    $("#sim-art").append("<span class='sa'><img src='" + similars[i].images[0].url + "' width='100' height='100'><div id='button-div'><button class='sa-button' id='" + similars[i].name + "' data-id='" + similars[i].id + "'>" + similars[i].name + "</button><button class='shows' data-id='" + similars[i].name + "'>Shows</button></div></span>");
                 }
 
             }
