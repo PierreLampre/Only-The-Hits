@@ -267,7 +267,7 @@
 
         function createPlaylist() {
 
-            playlistName = document.getElementById("playlist-input").value;
+            playlistName = document.getElementById("listName").value;
 
             $.ajax({
                 url: "https://api.spotify.com/v1/me/playlists",
