@@ -20,6 +20,8 @@ $(document).on("scroll", (function() {
 
 
 
+
+
 // function hide() {
 //     var x = document.getElementById("hide");
 //     var y = document.getElementById("show");
