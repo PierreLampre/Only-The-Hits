@@ -134,3 +134,11 @@ a:hover {
 .sa {
     float: left;
 }
+
+button.sa-button {
+    background: none;
+    border: none;
+    font-family: 'Raleway', sans-serif;
+    color: #435058;
+    margin: 2px;
+}
