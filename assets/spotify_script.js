@@ -1,5 +1,7 @@
  //Global Variables
 
+        alert("You are linked");
+
         let bandID;
         let newBand0;
         let newBand1;
