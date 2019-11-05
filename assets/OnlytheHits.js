@@ -33,7 +33,7 @@
 
 
                 $("#bandsInTown").empty();
-                $("#bandsInTown").append(artistName);
+                // $("#bandsInTown").append(artistName);
                 $('#bandsInTown').append(buttonOne);
                 $('#bandsInTown').append(buttonTwo);
 
