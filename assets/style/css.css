@@ -137,7 +137,7 @@ a:hover {
     float: left;
 }
 
-button.sa-button, button.shows, button#back, button#atp, button#next {
+button.sa-button, button.shows, button#back, button#atp, button#next, .btn-shows, .btn-social {
     background: none;
     border: none;
     font-family: 'Raleway', sans-serif;
@@ -147,7 +147,7 @@ button.sa-button, button.shows, button#back, button#atp, button#next {
 }
 
 button#back {
-    float: left;
+    margin: 2px 57px 2px 2px;
 }
 
 button#atp {
@@ -159,7 +159,7 @@ button.sa-button {
 }
 
 button#next {
-    float: right;
+    margin: 2px 2px 2px 57px;
 }
 
 button.shows {
@@ -189,7 +189,8 @@ div.iframe {
 }
 
 video {
-    margin: auto;
+    width: 300;
+
 }
 
 iframe {
