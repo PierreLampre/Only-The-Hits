@@ -22,10 +22,10 @@
                 buttonTwo.addClass("btn-social")
 
                 //link for shows
-                var forShows = $("<a>").attr("href", response.url).text("To the shows");
+                var forShows = $("<a>").attr({"href": response.url, "target": "_blank"}).text("To the shows");
                 console.log(forShows);
                 //link to facebook
-                var socialMedia = $("<a>").attr("href", response.facebook_page_url).text("Follow On Facebook");
+                var socialMedia = $("<a>").attr({"href": response.facebook_page_url, "target": "_blank"}).text("Follow On Facebook");
 
                 //var forShows= $("#artist-div").html("<p><a href='" + response.url + "'>To the shows</a></p>");
                 buttonOne.append(forShows);
