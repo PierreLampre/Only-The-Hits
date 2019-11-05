@@ -126,4 +126,26 @@ a:hover {
     width: 500px;
     display: block;
     margin: 0 auto;
+#sim-art {
+    display: flex;
+}
+
+.sa {
+    float: left;
+}
+
+button.sa-button, button.shows, button#back, button#atp, button#next {
+    background: none;
+    border: none;
+    font-family: 'Raleway', sans-serif;
+    color: #435058;
+    margin: 2px;
+}
+
+#track-name {
+    font-weight: bold;
+    margin: 10px 0px 0px 20px;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    color: #435058;
 }
