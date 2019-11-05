@@ -1,7 +1,7 @@
-        $(document).on("click", "#select-artist", function () {
+        $(document).on("click", ".shows", function () {
             event.preventDefault();
 
-            var artist = $('#artist-name').val();
+            var artist = $('.shows').attr("data-id");
             //console.log(artist)
             var queryURL = "https://rest.bandsintown.com/artists/" + artist + "/?app_id=codingbootcamp";
             // https://rest.bandsintown.com/artists/Weezer/events?app_id=codingbootcamp&date=upcoming
@@ -12,14 +12,14 @@
                 console.log(response);
                 $().text(JSON.stringify(response));
 
-                var artistName = $("<h1>").text(response.name);
+                //var artistName = $("<h1>").text(response.name);
 
                 //button for "To The Shows"
                 var buttonOne = $("<button>");
-                buttonOne.addClass("button")
+                buttonOne.addClass("btn-shows")
                 //button for "Follow On Facebook"
                 var buttonTwo = $("<button>");
-                buttonTwo.addClass("button")
+                buttonTwo.addClass("btn-social")
 
                 //link for shows
                 var forShows = $("<a>").attr("href", response.url).text("To the shows");
@@ -32,15 +32,15 @@
                 buttonTwo.append(socialMedia);
 
 
-                $("#artist-div").empty();
-                $("#artist-div").append(artistName);
-                $('#artist-div').append(buttonOne);
-                $('#artist-div').append(buttonTwo);
+                $("#bandsInTown").empty();
+                $("#bandsInTown").append(artistName);
+                $('#bandsInTown').append(buttonOne);
+                $('#bandsInTown').append(buttonTwo);
 
             });
             //Showing to page
-            $("#selectArtist").on("click", function (event) {
-                var artistInfo = $('#artist-name').val().trim();
-            });
+            //$(".shows").on("click", function (event) {
+             //   var artistinfo = $('#artist-name').val().trim();
+            //});
 
         });

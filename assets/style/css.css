@@ -126,7 +126,6 @@ a:hover {
     width: 500px;
     display: block;
     margin: 0 auto;
-}
 #sim-art {
     display: flex;
 }
@@ -150,4 +149,3 @@ button.sa-button, button.shows, button#back, button#atp, button#next {
     font-family: 'Raleway', sans-serif;
     color: #435058;
 }
-
