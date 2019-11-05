@@ -147,7 +147,7 @@ button.sa-button, button.shows, button#back, button#atp, button#next {
 }
 
 button.sa-button {
-    font-weight: 900;
+    font-weight: 800;
 }
 
 button.shows {
@@ -155,7 +155,7 @@ button.shows {
 }
 
 #track-name {
-    font-weight: 900;
+    font-weight: 800;
     margin: 10px 0px 0px 20px;
     font-size: 20px;
     font-family: 'Raleway', sans-serif;
@@ -178,6 +178,10 @@ div.iframe {
 
 video {
     margin: auto;
+}
+
+iframe {
+    height: 60px;
 }
 
 
