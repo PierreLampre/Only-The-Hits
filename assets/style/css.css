@@ -126,6 +126,13 @@ a:hover {
     width: 500px;
     display: block;
     margin: 0 auto;
+<<<<<<< HEAD
+<<<<<<< HEAD
+}
+=======
+}
+=======
+>>>>>>> d7fdcce6ef866fe23c70830fd9278b0ba2b327b7
 #sim-art {
     display: flex;
 }
@@ -149,3 +156,8 @@ button.sa-button, button.shows, button#back, button#atp, button#next {
     font-family: 'Raleway', sans-serif;
     color: #435058;
 }
+<<<<<<< HEAD
+
+>>>>>>> cdf6c3588fdc1d7064ce3b3dc3af0acbac820c0b
+=======
+>>>>>>> d7fdcce6ef866fe23c70830fd9278b0ba2b327b7
