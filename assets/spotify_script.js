@@ -189,12 +189,12 @@
 
 
 
-                    $("#preview").append("<div class='iframe'><button id='back'>Back</button><span id='iframebox'><p> " + simTrackNames[theNumber] + "</p><iframe src='" + simTopTracks[theNumber] + "'></iframe></span><button id='next'>Next</button><p><button id='atp' data-uri='" + simTrackURIs[theNumber] + "'>Add To Playlist</button></p></div>");
+                    $("#preview").append("<div class='iframe'><button id='back'>Back</button><span id='iframebox'><p id='track-name'> " + simTrackNames[theNumber] + "</p><iframe src='" + simTopTracks[theNumber] + "'></iframe></span><button id='next'>Next</button><p><button id='atp' data-uri='" + simTrackURIs[theNumber] + "'>Add To Playlist</button></p></div>");
                     $("#next").on("click", function () {
                         if (theNumber <= 3) {
                             theNumber++;
                             $("#iframebox").empty();
-                            $("#iframebox").html("<p> " + simTrackNames[theNumber] + "</p><iframe src='" + simTopTracks[theNumber] + "'</iframe>");
+                            $("#iframebox").html("<p id='track-name'> " + simTrackNames[theNumber] + "</p><iframe src='" + simTopTracks[theNumber] + "'</iframe>");
                             $("#atp").attr("data-uri", simTrackURIs[theNumber]);
                         } else {
 
@@ -204,7 +204,7 @@
                         if (theNumber >= 1) {
                             theNumber--;
                             $("#iframebox").empty();
-                            $("#iframebox").html("<p> " + simTrackNames[theNumber] + "</p><iframe src='" + simTopTracks[theNumber] + "'</iframe>");
+                            $("#iframebox").html("<p id='track-name'> " + simTrackNames[theNumber] + "</p><iframe src='" + simTopTracks[theNumber] + "'</iframe>");
                             $("#atp").attr("data-uri", simTrackURIs[theNumber]);
                         } else {
 
