@@ -130,6 +130,7 @@ a:hover {
 
 #sim-art {
     display: flex;
+    overflow: auto;
 }
 
 .sa {
@@ -146,11 +147,15 @@ button.sa-button, button.shows, button#back, button#atp, button#next {
 }
 
 button.sa-button {
-    font-weight: bolder;
+    font-weight: 900;
+}
+
+button.shows {
+    float: right;
 }
 
 #track-name {
-    font-weight: bolder;
+    font-weight: 900;
     margin: 10px 0px 0px 20px;
     font-size: 20px;
     font-family: 'Raleway', sans-serif;
@@ -168,6 +173,10 @@ span.sa {
 }
 
 div.iframe {
+    margin: 15px;
+}
+
+video {
     margin: auto;
 }
 
