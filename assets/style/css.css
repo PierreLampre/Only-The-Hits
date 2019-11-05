@@ -142,13 +142,34 @@ button.sa-button, button.shows, button#back, button#atp, button#next {
     font-family: 'Raleway', sans-serif;
     color: #435058;
     margin: 2px;
+    padding: 0;
+}
+
+button.sa-button {
+    font-weight: bolder;
 }
 
 #track-name {
-    font-weight: bold;
+    font-weight: bolder;
     margin: 10px 0px 0px 20px;
     font-size: 20px;
     font-family: 'Raleway', sans-serif;
     color: #435058;
 }
+
+img {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+}
+
+span.sa {
+    margin: 5px;
+}
+
+div.iframe {
+    margin: auto;
+}
+
+
 
