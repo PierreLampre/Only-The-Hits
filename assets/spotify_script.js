@@ -189,7 +189,7 @@
 
 
 
-                    $("#preview").append("<div class='iframe'><span id='iframebox'><p id='track-name'> " + simTrackNames[theNumber] + "</p><iframe src='" + simTopTracks[theNumber] + "'></iframe></span>><p><button id='back'>Back</button><button id='atp' data-uri='" + simTrackURIs[theNumber] + "'>Add To Playlist</button><button id='next'>Next</button</p></div>");
+                    $("#preview").append("<div class='iframe'><span id='iframebox'><p id='track-name'> " + simTrackNames[theNumber] + "</p><iframe src='" + simTopTracks[theNumber] + "'></iframe></span><p><button id='back'>Back</button><button id='atp' data-uri='" + simTrackURIs[theNumber] + "'>Add To Playlist</button><button id='next'>Next</button</p></div>");
                     $("#next").on("click", function () {
                         if (theNumber <= 3) {
                             theNumber++;
