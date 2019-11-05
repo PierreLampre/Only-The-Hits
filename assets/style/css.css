@@ -135,10 +135,11 @@ a:hover {
     float: left;
 }
 
-button.sa-button {
+button.sa-button, button.shows, button#back, button#atp, button#next {
     background: none;
     border: none;
     font-family: 'Raleway', sans-serif;
     color: #435058;
     margin: 2px;
 }
+
