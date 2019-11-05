@@ -107,7 +107,7 @@ a:hover {
     color: #435058;
     font-family: 'Raleway', sans-serif;
     text-align: center;
-    font-weight: 1000;
+    font-weight: 500;
 }
 
 #play {
@@ -146,8 +146,20 @@ button.sa-button, button.shows, button#back, button#atp, button#next {
     padding: 0;
 }
 
+button#back {
+    float: left;
+}
+
+button#atp {
+    font-weight: 800;
+}
+
 button.sa-button {
     font-weight: 800;
+}
+
+button#next {
+    float: right;
 }
 
 button.shows {
@@ -182,6 +194,7 @@ video {
 
 iframe {
     height: 60px;
+    width: 300px;
 }
 
 
