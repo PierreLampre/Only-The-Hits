@@ -143,3 +143,11 @@ button.sa-button, button.shows, button#back, button#atp, button#next {
     margin: 2px;
 }
 
+#track-name {
+    font-weight: bold;
+    margin: 10px 0px 0px 20px;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    color: #435058;
+}
+
