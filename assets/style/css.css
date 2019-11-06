@@ -190,6 +190,7 @@ div.iframe {
 
 video {
     width: 300px;
+    margin: 15px;
 }
 
 iframe {
@@ -198,11 +199,10 @@ iframe {
 }
 span#iframebox {
     width: 300px;
+    background: none;
+    border: none;
 }
 
-div.iframe {
-    width: 300px;
-}
 
 
 
