@@ -9,7 +9,9 @@
         let newBand3;
         let newBand4;
         let userId;
-        let track;
+        let track; 
+        let simBandName;
+
 
         //Arrays
 
@@ -137,6 +139,8 @@
 
             simTrackURIs = [];
 
+            simBandName = "";
+
             var buttonId = $(this).attr("data-id");
             let theNumber = 0;
 
@@ -186,6 +190,8 @@
                     simTrackURIs.push(trackURI2);
                     simTrackURIs.push(trackURI3);
                     simTrackURIs.push(trackURI4);
+
+                    simBandName = data.tracks[0].artists[0].name;
 
 
 
@@ -240,7 +246,7 @@
                                 console.log("somethin about status?", status);
                             }
                     });
-                    $("#playlist").append("<p>" + similars[theNumber].name + " - " + simTrackNames[theNumber] + "</p>");
+                    $("#playlist").append("<p>" + simBandName + " - " + simTrackNames[theNumber] + "</p>");
                 })
 
         }
