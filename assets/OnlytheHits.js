@@ -1,7 +1,7 @@
         $(document).on("click", ".shows", function () {
             event.preventDefault();
 
-            var artist = $('.shows').attr("data-id");
+            var artist = $(this).attr("data-id");
             //console.log(artist)
             var queryURL = "https://rest.bandsintown.com/artists/" + artist + "/?app_id=codingbootcamp";
             // https://rest.bandsintown.com/artists/Weezer/events?app_id=codingbootcamp&date=upcoming
@@ -39,8 +39,8 @@
 
             });
             //Showing to page
-            //$(".shows").on("click", function (event) {
-             //   var artistinfo = $('#artist-name').val().trim();
-            //});
+            // $(".shows").on("click", function (event) {
+            //    artist = $(this).attr("data-id");
+            // });
 
         });
