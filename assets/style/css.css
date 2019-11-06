@@ -69,15 +69,15 @@ footer {
     color: #f1f2ee;
 }
 
-a {
+a.foot {
     color: #f1f2ee;
 }
 
-a:visited {
+a.foot:visited {
     color: #bfb7b6;
 }
 
-a:hover {
+a.foot:hover {
     color: #dcf763;
 }
 
@@ -190,6 +190,7 @@ div.iframe {
 
 video {
     width: 300px;
+    margin: 15px;
 }
 
 iframe {
@@ -198,11 +199,10 @@ iframe {
 }
 span#iframebox {
     width: 300px;
+    background: none;
+    border: none;
 }
 
-div.iframe {
-    width: 300px;
-}
 
 
 
