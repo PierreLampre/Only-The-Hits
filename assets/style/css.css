@@ -137,7 +137,7 @@ a.foot:hover {
     float: left;
 }
 
-button.sa-button, button.shows, button#back, button#atp, button#next, .btn-shows, .btn-social {
+button.sa-button, button.shows, button#back, button#atp, button#next, .btn-shows, .btn-social, a {
     background: none;
     border: none;
     font-family: 'Raleway', sans-serif;
