@@ -240,6 +240,7 @@
                                 console.log("somethin about status?", status);
                             }
                     });
+                    $("#playlist").append("<p>" + similars[theNumber].name + " - " + simTrackNames[theNumber]);
                 })
 
         }
@@ -336,5 +337,8 @@
             console.log("Faaay");
 
             createPlaylist();
+
+            $("#playlist").empty();
+            $("#playlist").text("Click 'add to playlist' to add songs to your playlist!");
 
         })
