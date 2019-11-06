@@ -232,6 +232,7 @@
 
                             success: function (data) {
                                 console.log("cool bro");
+                                console.log(data);
                             },
                             error: function (response, status, error) {
                                 console.log("This is the error:", error);
