@@ -240,7 +240,7 @@
                                 console.log("somethin about status?", status);
                             }
                     });
-                    $("#playlist").append("<p>" + similars[theNumber].name + " - " + simTrackNames[theNumber]);
+                    $("#playlist").append("<p>" + similars[theNumber].name + " - " + simTrackNames[theNumber] + "</p>");
                 })
 
         }
