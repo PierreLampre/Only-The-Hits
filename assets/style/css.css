@@ -69,15 +69,15 @@ footer {
     color: #f1f2ee;
 }
 
-a {
+a.foot {
     color: #f1f2ee;
 }
 
-a:visited {
+a.foot:visited {
     color: #bfb7b6;
 }
 
-a:hover {
+a.foot:hover {
     color: #dcf763;
 }
 
