@@ -24,6 +24,7 @@
                 //link for shows
                 var forShows = $("<a>").attr({"href": response.url, "target": "_blank"}).text("To the shows");
                 console.log(forShows);
+                forShows.addClass("for-shows");
                 //link to facebook
                 var socialMedia = $("<a>").attr({"href": response.facebook_page_url, "target": "_blank"}).text("Follow On Facebook");
 
