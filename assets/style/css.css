@@ -69,15 +69,15 @@ footer {
     color: #f1f2ee;
 }
 
-a {
+a.foot {
     color: #f1f2ee;
 }
 
-a:visited {
+a.foot:visited {
     color: #bfb7b6;
 }
 
-a:hover {
+a.foot:hover {
     color: #dcf763;
 }
 
@@ -107,7 +107,7 @@ a:hover {
     color: #435058;
     font-family: 'Raleway', sans-serif;
     text-align: center;
-    font-weight: 1000;
+    font-weight: 500;
 }
 
 #play {
@@ -127,18 +127,82 @@ a:hover {
     display: block;
     margin: 0 auto;
 }
+
 #sim-art {
     display: flex;
+    overflow: auto;
 }
 
 .sa {
     float: left;
 }
 
-button.sa-button {
+button.sa-button, button.shows, button#back, button#atp, button#next, .btn-shows, .btn-social, a {
     background: none;
     border: none;
     font-family: 'Raleway', sans-serif;
     color: #435058;
     margin: 2px;
+    padding: 0;
 }
+
+button#back {
+    margin: 2px 57px 2px 2px;
+}
+
+button#atp {
+    font-weight: 800;
+}
+
+button.sa-button {
+    font-weight: 800;
+}
+
+button#next {
+    margin: 2px 2px 2px 57px;
+}
+
+button.shows {
+    float: right;
+}
+
+#track-name {
+    font-weight: 800;
+    margin: 10px 0px 0px 20px;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    color: #435058;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+}
+
+span.sa {
+    margin: 5px;
+}
+
+div.iframe {
+    margin: 15px;
+}
+
+video {
+    width: 300px;
+    margin: 15px;
+}
+
+iframe {
+    height: 80px;
+    width: 300px;
+}
+span#iframebox {
+    width: 300px;
+    background: none;
+    border: none;
+}
+
+
+
+
