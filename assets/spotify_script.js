@@ -48,7 +48,7 @@
         const authEndpoint = 'https://accounts.spotify.com/authorize';
 
         // Replace with your app's client ID, redirect URI and desired scopes
-        const clientId = '2ea8916fc375497c977cf897e6533579';
+        const clientId = '1d7de583c3da4cb7b4dcc581dff3d2d7';
         const redirectUri = 'https://pierrelampre.github.io/OnlyTheHits';
         const scopes = [
             'playlist-modify-private',
