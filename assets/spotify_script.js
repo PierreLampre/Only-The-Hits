@@ -9,7 +9,9 @@
         let newBand3;
         let newBand4;
         let userId;
-        let track;
+        let track; 
+        let simBandName;
+
 
         //Arrays
 
@@ -137,6 +139,8 @@
 
             simTrackURIs = [];
 
+            simBandName = "";
+
             var buttonId = $(this).attr("data-id");
             let theNumber = 0;
 
@@ -187,14 +191,16 @@
                     simTrackURIs.push(trackURI3);
                     simTrackURIs.push(trackURI4);
 
+                    simBandName = data.tracks[0].artists[0].name;
 
 
-                    $("#preview").append("<div class='iframe'><button id='back'>Back</button><span id='iframebox'><p> " + simTrackNames[theNumber] + "</p><iframe src='" + simTopTracks[theNumber] + "'></iframe></span><button id='next'>Next</button><p><button id='atp' data-uri='" + simTrackURIs[theNumber] + "'>Add To Playlist</button></p></div>");
+
+                    $("#preview").append("<div class='iframe'><span id='iframebox'><p id='track-name'> " + simTrackNames[theNumber] + "</p><iframe src='" + simTopTracks[theNumber] + "'></iframe></span><p><button id='back'>Back</button><button id='atp' data-uri='" + simTrackURIs[theNumber] + "'>Add To Playlist</button><button id='next'>Next</button</p></div>");
                     $("#next").on("click", function () {
                         if (theNumber <= 3) {
                             theNumber++;
                             $("#iframebox").empty();
-                            $("#iframebox").html("<p> " + simTrackNames[theNumber] + "</p><iframe src='" + simTopTracks[theNumber] + "'</iframe>");
+                            $("#iframebox").html("<p id='track-name'> " + simTrackNames[theNumber] + "</p><iframe src='" + simTopTracks[theNumber] + "'</iframe>");
                             $("#atp").attr("data-uri", simTrackURIs[theNumber]);
                         } else {
 
@@ -204,7 +210,7 @@
                         if (theNumber >= 1) {
                             theNumber--;
                             $("#iframebox").empty();
-                            $("#iframebox").html("<p> " + simTrackNames[theNumber] + "</p><iframe src='" + simTopTracks[theNumber] + "'</iframe>");
+                            $("#iframebox").html("<p id='track-name'> " + simTrackNames[theNumber] + "</p><iframe src='" + simTopTracks[theNumber] + "'</iframe>");
                             $("#atp").attr("data-uri", simTrackURIs[theNumber]);
                         } else {
 
@@ -232,6 +238,7 @@
 
                             success: function (data) {
                                 console.log("cool bro");
+                                console.log(data);
                             },
                             error: function (response, status, error) {
                                 console.log("This is the error:", error);
@@ -239,6 +246,7 @@
                                 console.log("somethin about status?", status);
                             }
                     });
+                    $("#playlist").append("<p>" + simBandName + " - " + simTrackNames[theNumber] + "</p>");
                 })
 
         }
@@ -335,5 +343,8 @@
             console.log("Faaay");
 
             createPlaylist();
+
+            $("#playlist").empty();
+            $("#playlist").text("Click 'add to playlist' to add songs to your playlist!");
 
         })
