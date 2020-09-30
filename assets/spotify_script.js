@@ -65,9 +65,7 @@
 
         // necessary functions
 
-        function getSimilarArtists(e) {
-
-            e.preventDefault();
+        function getSimilarArtists() {
 
             console.log(initArtist);
 
