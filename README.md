@@ -1,4 +1,4 @@
-# Project1
+# OnlyTheHits
 Overall Concept
 
 While Spotify generates new music playlists for users using their own algorithms, at times those playlists are populated with songs that are NOT new to the user.
